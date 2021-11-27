@@ -3,6 +3,9 @@
     "/login/*": "login.html",
     "/sample/*": "sample.html"
   },
+  {
+  "clean_urls": true
+  },
   
   "headers":{
     "/*":{
