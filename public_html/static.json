@@ -1,8 +1,0 @@
-{
-  "headers":{
-    "/*":{
-      "X-Author" : "arcsel",
-      "Access-Control-Allow-Origin" : "*"
-    }
-  }
-}
