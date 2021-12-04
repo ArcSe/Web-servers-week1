@@ -1,0 +1,19 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег BUTTON</title>
+ </head>
+ <body>
+  <input type="text" id="inp" size="40">
+  <button id="bt">Кнопка с текстом</button>
+   <script>
+       button = document.getElementById("bt");
+        input = document.getElementById("inp");
+        button.onclick = function() {
+          input = document.getElementById("inp").value;
+      let promise = fetch(input)
+      document.getElementById("inp").value = promise.text
+    };
+   </script>
+ </body>
+</html>
