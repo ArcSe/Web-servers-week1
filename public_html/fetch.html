@@ -11,9 +11,11 @@
         input = document.getElementById("inp");
         button.onclick = function() {
           input = document.getElementById("inp").value;
-      let promise = fetch(input)
-      document.getElementById("inp").value = promise.text
-    };
+          fetch(input)
+            .then((response) => response.text())
+            .then((response) => {
+            document.getElementById("inp").value = response});
+        };
    </script>
  </body>
 </html>
